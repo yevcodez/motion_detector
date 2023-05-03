@@ -1,5 +1,6 @@
 import cv2
 import time
+import os
 
 # Define motion detection parameters
 min_area = 20000  # minimum area of motion contour
@@ -45,6 +46,7 @@ while True:
         if cv2.contourArea(contour) < min_area:
             continue
         motion_detected = True
+        os.system("afplay /System/Library/Sounds/Glass.aiff")
         break
     
     # If motion has been detected, capture image
