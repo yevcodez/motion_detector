@@ -2,7 +2,7 @@ import cv2
 import time
 
 # Define motion detection parameters
-min_area = 5000  # minimum area of motion contour
+min_area = 20000  # minimum area of motion contour
 threshold = 50   # threshold for detecting motion
 
 # Initialize video capture object
